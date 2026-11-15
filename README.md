@@ -36,6 +36,12 @@ Bắt đầu bằng pilot có phí với đầu vào, đầu ra, ngân sách và
 | tests/regression/ | Chức năng, i18n, responsive và native zoom |
 | docs/SALES_PLAYBOOK.md | Định vị, tìm khách và mẫu tiếp cận |
 
+## Website công khai
+
+- Portfolio: https://teoteo1081.github.io/W17_04_Porfolio_Codex/
+- Hồ sơ năng lực / CV: https://teoteo1081.github.io/W17_04_Porfolio_Codex/index_portfolio_clean.html
+- GitHub Pages phục vụ bản Final từ main / thư mục gốc. Máy chủ lưu file vẫn chạy cục bộ theo hướng dẫn dưới đây.
+
 ## Chạy cục bộ
 
 Yêu cầu Python 3.10 trở lên. Máy chủ chỉ dùng thư viện chuẩn.
