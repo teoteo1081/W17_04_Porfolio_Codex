@@ -1,0 +1,16 @@
+{
+  "normalization": "UTF-8, universal newlines normalized to LF",
+  "sha256": {
+    "index.html": "306c6083452c6c8de364ceef19bdc09fbe33b4e2e0a14f7b4c8fbf576f73deab",
+    "index_portfolio_clean.html": "a12295593a973c04ebdf87af6a2f7033cbbd2fccabe2e7de664a260963e5d6ca",
+    "editor_workspace/editor_portfolio.html": "2045b0281dec320d9116709628c68df15faea8e3f580e9aee6c53d8f77a7e56a",
+    "editor_workspace/editor_cv.html": "103f9eba80bd7a123ac34c27932b291995b6e417aafe10e200e3e5e603e11054",
+    "server.py": "3ba02c3a0b7b047d4d0cc0849b2b904fe87dfb8c382c99b782c496e7ea91afb9",
+    "dev_server.py": "5dc461af380324b0e8db9d83b3d83f3a4b9ee7ec1169e77b67b425f73b3f8296",
+    "tools/sync_creators.py": "f2b4bdb59b8e886e3a2b744db12a25ded63c397914f56af77f8934d010fec657",
+    "tests/regression/run_all.py": "7b2cd3f633eac014d5d9ca59931b3b5189f70f3255c8d8e30145fd86ff9c3cca",
+    "tests/regression/extra_cases.py": "9f98ecf1fbf33cbd17e4ce8625463ebd1abba81a69ccdb94616862f0cc249e90",
+    "tests/regression/extra_cases_r3.py": "00080bee03376d115e9e62f2695fd6e01c522abdcba98dd8d9077d6716d0f488",
+    "tests/regression/native_zoom.py": "50740a4c7fd0ad89002a9521a8f3ce7fe7cb4747667cccb96061038014227ea9"
+  }
+}

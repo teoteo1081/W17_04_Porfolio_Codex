@@ -1,0 +1,62 @@
+[
+ {
+  "id": "F05",
+  "name": "cache/snapshot độc hại (img onerror, script, onclick, javascript:, __proto__) không thực thi, không chèn node, không giữ thuộc tính; bản legacy không bị xóa",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F05",
+  "name": "mã nguồn không còn gán snapshot HTML cache vào innerHTML (4 trang)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F05",
+  "name": "migration: chỉnh sửa tạo bởi Creator CŨ (snapshot innerHTML) vẫn hiện ở Creator/Final MỚI; bản cũ không bị xóa",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F05",
+  "name": "chỉnh sửa node không có data-i18n được lưu theo schema (chỉ số + văn bản gốc), còn sau reload/đổi ngôn ngữ, và không áp nhầm khi văn bản gốc không khớp (4 trang)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N01",
+  "name": "migration CV: thẻ giải pháp đã xóa ở Creator cũ không sống lại, thẻ còn lại giữ đúng (4 locale)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N02",
+  "name": "node trùng khóa i18n (nav desktop/mobile): chỉnh sửa không bị xóa; còn sau reload và khi xuất Final (cache trống/có cache)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N03",
+  "name": "kéo thẻ + xuất Final khi có nhiều node cùng văn bản '✓': chỉnh sửa chỉ ở đúng node, không nhân sang thẻ khác (cache trống/có cache)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N04",
+  "name": "brand trên toolbar Creator (CV và portfolio) được lưu và còn sau khi tải lại",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F10+",
+  "name": "server (audit lần 2): static không bị vượt bằng percent-encoding (N05); ghi đồng thời + reader an toàn, không 500, backup không trùng (N06); HTML rác/nửa file/thiếu thành phần bị từ chối (N07); body quá lớn gửi thật nhận 413 (N08)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "SAFETY",
+  "name": "file làm việc thật không bị bộ kiểm thử ghi (hash trước = sau)",
+  "status": "FAIL",
+  "detail": ""
+ }
+]

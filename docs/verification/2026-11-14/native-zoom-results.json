@@ -1,0 +1,21 @@
+{
+  "command": "python -X utf8 tests/regression/native_zoom.py docs/verification/2026-11-14/zoom",
+  "observed_result": "3/3 PASS",
+  "native_zoom": {
+    "innerWidth": 640,
+    "outerWidth": 1280,
+    "devicePixelRatio": 2,
+    "emulated_viewport": false
+  },
+  "checks": [
+    "Native 200% zoom actually applied",
+    "No horizontal overflow or orphan lines; editor save controls reachable in 4 pages x 4 locales",
+    "Correct service package visible after click in 2 pages x 4 locales x 4 services"
+  ],
+  "reviewed_screenshots": [
+    "zoom/ZOOM200-independent-hero.png",
+    "zoom/ZOOM200-native-modal-top.png",
+    "zoom/ZOOM200-native-creator-cv.png"
+  ],
+  "capture_note": "Blank nonzero-scroll capture attempts were discarded. Modal recaptured at background scrollY=0 while preserving 200% native zoom and open modal state."
+}

@@ -1,0 +1,218 @@
+[
+ {
+  "id": "STATIC",
+  "name": "Creator đồng bộ Final (sync_creators --check); không còn khóa portfolio_*; không còn vòng lặp removeItem xóa cache",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F01",
+  "name": "language/theme dùng w17_04_*, không đọc/ghi portfolio_lang|theme (4 trang)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F01",
+  "name": "theme lưu ở w17_04_theme và được khôi phục khi tải lại",
+  "status": "PASS",
+  "detail": "theme=light, dark=False"
+ },
+ {
+  "id": "F02",
+  "name": "mở cả 4 trang (2 lượt) không xóa/ghi đè bất kỳ key W17/W17_02 hay key ứng dụng khác",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F04",
+  "name": "mọi data-i18n/-aria/-placeholder có đủ khóa ở vi/en/es/zh và bốn locale cùng bộ khóa (4 trang)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F04",
+  "name": "từ điển bản dịch Creator = Final (portfolio và CV, cả bốn locale)",
+  "status": "PASS",
+  "detail": "portfolio=True cv=True"
+ },
+ {
+  "id": "F04",
+  "name": "4 CTA 'Xem bảng chi tiết' dịch theo locale ở Final và Creator; Hero giữ <br> và span.inline-block sau khi đổi ngôn ngữ",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F06",
+  "name": "hero_bio và footer_desc của CV còn span bảo vệ đuôi câu sau mỗi lần đổi ngôn ngữ (4 locale x 2 trang)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F05",
+  "name": "cache/snapshot độc hại (img onerror, script, onclick, javascript:, __proto__) không thực thi, không chèn node, không giữ thuộc tính; bản legacy không bị xóa",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F05",
+  "name": "mã nguồn không còn gán snapshot HTML cache vào innerHTML (4 trang)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F05",
+  "name": "migration: chỉnh sửa tạo bởi Creator CŨ (snapshot innerHTML) vẫn hiện ở Creator/Final MỚI; bản cũ không bị xóa",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F05",
+  "name": "chỉnh sửa node không có data-i18n được lưu theo schema (chỉ số + văn bản gốc), còn sau reload/đổi ngôn ngữ, và không áp nhầm khi văn bản gốc không khớp (4 trang)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F03",
+  "name": "mọi nhóm đầu việc (12 đầu việc) đọc/cuộn được; bấm thẻ dịch vụ đưa đúng nhóm vào vùng nhìn thấy (224 tổ hợp: 2 trang x 7 viewport x 4 ngôn ngữ x 4 thẻ)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F03",
+  "name": "bàn phím: Enter mở modal, focus vào nút đóng, bẫy focus, PageUp/PageDown cuộn được, Escape trả focus về thẻ",
+  "status": "PASS",
+  "detail": "focused=ga4-modal-close-btn escaped=False before=417 up=0 down=481 back=True"
+ },
+ {
+  "id": "F03",
+  "name": "cuộn bằng bánh xe chuột thật (mouse.wheel) đưa đủ 12 đầu việc vào vùng nhìn thấy (2 trang × 4 viewport thấp/mobile)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F08",
+  "name": "không có dòng cuối chỉ 1 từ (orphan) và H1/H2/đoạn Hero có text-wrap: balance — đo theo vị trí từng từ (852 phần tử, 4 trang x 6 viewport x 4 locale)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F09",
+  "name": "mọi nút toolbar (nhất là Lưu file sạch) nằm trong viewport, không bị che/cắt, đủ cỡ chạm, bấm Lưu thật ghi được (24 tổ hợp trang x viewport)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F09",
+  "name": "bàn phím: Tab tới được nút 'Lưu file sạch (Final)' của Creator CV trên mobile 375px và nút có dấu hiệu focus nhìn thấy",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F07",
+  "name": "chu trình chỉnh sửa → lưu (server thật) → xuất Final → mở lại (cache trống & cache có dữ liệu) → đổi 4 ngôn ngữ → bấm link hai chiều; DOM sau khi mở lại sạch; dữ liệu cũ/mới không mất",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F07",
+  "name": "xuất Final khi đang BẬT sửa chữ: HTML và DOM sau khi mở lại (có/không cache) đều 0 contenteditable/spellcheck/toolbar/nút điều khiển/link editor_*",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F10",
+  "name": "server lưu file: chặn origin/Host/token lạ, Content-Type, payload quá lớn, JSON hỏng, đích ngoài allowlist, HTML không hợp lệ/rác/cắt cụt/còn editor; ghi nguyên tử + backup; trạng thái 2xx/4xx đúng; không phục vụ mã nguồn",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N01",
+  "name": "migration CV: thẻ giải pháp đã xóa ở Creator cũ không sống lại, thẻ còn lại giữ đúng (4 locale)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N02",
+  "name": "node trùng khóa i18n (nav desktop/mobile): chỉnh sửa không bị xóa; còn sau reload và khi xuất Final (cache trống/có cache)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N03",
+  "name": "kéo thẻ + xuất Final khi có nhiều node cùng văn bản '✓': chỉnh sửa chỉ ở đúng node, không nhân sang thẻ khác (cache trống/có cache)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N04",
+  "name": "brand trên toolbar Creator (CV và portfolio) được lưu và còn sau khi tải lại",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "F10+",
+  "name": "server (audit lần 2): static không bị vượt bằng percent-encoding (N05); ghi đồng thời + reader an toàn, không 500, backup không trùng (N06); HTML rác/nửa file/thiếu thành phần bị từ chối (N07); body quá lớn gửi thật nhận 413 (N08)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "R3-01..05",
+  "name": "độ thuần nhất ngôn ngữ: không còn từ tiếng Anh thông dụng (Users/Views/Events/Core Service/Verified/Master Degree/Actual vs. Target/Self-service/Auto-Dispatch...) trong từ điển và chữ hiển thị thật ở VI/ES/ZH (4 trang, 3 tab GA4, 3 modal demo, tooltip/aria)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "R3-06",
+  "name": "HTML tĩnh khớp từ điển VI cho mọi data-i18n và data-i18n-aria (4 file), không còn lệch nguồn → DOM",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "R3-08",
+  "name": "Creator/editor bản địa hóa: toolbar, nhãn bật/tắt, toast không còn chữ Việt ở EN/ES/ZH và cập nhật ngay khi đổi ngôn ngữ (đủ khóa ở 4 locale)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "R3-07",
+  "name": "accessible names (aria-label) và <title>/description/og:title đổi theo locale; metadata không còn định vị Performance Marketer cũ",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "N07",
+  "name": "validator đọc CÂY HTML đã parse: marker trong comment/chuỗi script, sai thẻ, trùng id đều bị từ chối; trang thật vẫn ghi được",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "CONTENT",
+  "name": "định vị Operations Automation & Data Reporting Specialist (đã dịch theo từng locale), đúng 4 dịch vụ + badge theo dictionary, không cam kết KPI, khối Power BI Telemetry, bốn ứng dụng Proof of Work (Final+Creator, 4 locale)",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "NAV",
+  "name": "điều hướng hai chiều index.html <-> index_portfolio_clean.html và editor_portfolio <-> editor_cv bằng click thật",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "RESP",
+  "name": "không tràn ngang toàn trang (96 tổ hợp trang x viewport x locale); không dùng overflow-x: hidden để che",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "RESP",
+  "name": "không còn overflow-x: hidden / overflow-x-hidden trong 4 file HTML",
+  "status": "PASS",
+  "detail": ""
+ },
+ {
+  "id": "SAFETY",
+  "name": "file làm việc thật không bị bộ kiểm thử ghi (hash trước = sau)",
+  "status": "PASS",
+  "detail": ""
+ }
+]

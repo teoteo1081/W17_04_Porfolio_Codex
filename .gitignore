@@ -1,0 +1,12 @@
+﻿__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+.env
+service_account*.json
+credentials*.json
+_old/
+
+.w17_backups/
+.w17_save.lock

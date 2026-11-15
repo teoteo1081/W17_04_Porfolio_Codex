@@ -1,0 +1,29 @@
+{
+  "reviewer": "Codex",
+  "widths_reviewed": [
+    320,
+    375,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "locales_sampled_visually": [
+    "vi",
+    "en",
+    "es",
+    "zh"
+  ],
+  "areas": [
+    "portfolio hero",
+    "four service cards",
+    "pilot process",
+    "CV hero",
+    "light-mode pilot",
+    "mobile service modal",
+    "native 200% modal and Creator CV toolbar"
+  ],
+  "contact_sheet": "content/additional-viewport-contact-sheet.png",
+  "findings": "No clipped content or horizontal overflow observed in reviewed captures; hierarchy, line wrapping and existing design tokens preserved.",
+  "limits": "Chromium on Windows only. No physical touch device or full assistive-technology / WCAG audit."
+}
